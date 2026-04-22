@@ -69,9 +69,9 @@ const year = new Date().getFullYear()
         </div>
       </div>
 
-      <div class="border-t border-slate-700 pt-6 text-center text-xs text-slate-400">
+      <div class="border-t border-slate-600 pt-6 text-center text-xs text-slate-400">
         <p class="px-4 mb-8 sm:px-6">
-          © {{ year }} AbrigoFácil. Desenvolvido para ajudar em situações de emergência.
+          © {{ year }} AbrigoFácil. Desenvolvido por <span class="font-bold">Felipe Mascena</span> para ajudar em situações de emergência.
         </p>
       </div>
     </div>
