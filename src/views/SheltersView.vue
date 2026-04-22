@@ -114,7 +114,7 @@ onMounted(() => fetchShelters())
           v-model="search"
           type="search"
           placeholder="Buscar por nome, cidade ou endereço..."
-          class="w-full rounded-lg border border-slate-300 py-2.5 pl-10 pr-4 text-sm text-slate-900 placeholder-slate-400 transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+          class="w-full rounded-lg outline outline-slate-300 py-2.5 pl-10 pr-4 text-sm text-slate-900 placeholder-slate-400 transition focus:border-none focus:outline-blue-500 focus:ring-2 focus:ring-blue-500/30"
         />
       </div>
 
@@ -124,7 +124,7 @@ onMounted(() => fetchShelters())
             v-for="opt in STATUS_OPTIONS"
             :key="opt.value"
             :class="[
-              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
+              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-pointer',
               statusFilter === opt.value
                 ? 'border-blue-600 bg-blue-600 text-white'
                 : 'border-slate-300 bg-white text-slate-600 hover:border-blue-400 hover:text-blue-600',
@@ -141,7 +141,7 @@ onMounted(() => fetchShelters())
         <div role="group" aria-label="Filtrar por recursos" class="flex flex-wrap gap-1.5">
           <button
             :class="[
-              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
+              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-pointer',
               petsFilter
                 ? 'border-blue-600 bg-blue-600 text-white'
                 : 'border-slate-300 bg-white text-slate-600 hover:border-blue-400',
@@ -153,7 +153,7 @@ onMounted(() => fetchShelters())
           </button>
           <button
             :class="[
-              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
+              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-pointer',
               elderlyFilter
                 ? 'border-blue-600 bg-blue-600 text-white'
                 : 'border-slate-300 bg-white text-slate-600 hover:border-blue-400',
@@ -165,7 +165,7 @@ onMounted(() => fetchShelters())
           </button>
           <button
             :class="[
-              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
+              'rounded-full border px-3 py-1 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-pointer',
               disabledFilter
                 ? 'border-blue-600 bg-blue-600 text-white'
                 : 'border-slate-300 bg-white text-slate-600 hover:border-blue-400',

@@ -78,7 +78,7 @@ const tags = computed(() => {
         <span
           v-for="tag in tags"
           :key="tag.label"
-          class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-sm text-slate-600"
+          class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-sm text-slate-600 pointer-events-none"
           :aria-label="tag.label"
         >
           <span aria-hidden="true">{{ tag.icon }}</span>
