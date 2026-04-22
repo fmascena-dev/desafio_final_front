@@ -23,32 +23,14 @@ const year = new Date().getFullYear()
           <div class="flex flex-col gap-2">
             <h3 class="font-bold text-white">Emergências</h3>
             <ul class="flex flex-col gap-1 text-sm" role="list">
-              <li>
-                <a
-                  href="tel:193"
-                  class="hover:text-white focus:outline-none focus-visible:underline"
-                  aria-label="Bombeiros — telefone 193"
-                >
-                  🚒 Bombeiros — 193
-                </a>
+              <li class="pointer-events-none font-semibold" aria-label="Defesa Civil — telefone 199">
+                🚒 Bombeiros — 193
               </li>
-              <li>
-                <a
-                  href="tel:192"
-                  class="hover:text-white focus:outline-none focus-visible:underline"
-                  aria-label="SAMU — telefone 192"
-                >
-                  🚑 SAMU — 192
-                </a>
+              <li class="pointer-events-none font-semibold" aria-label="Defesa Civil — telefone 199">
+                🚑 SAMU — 192
               </li>
-              <li>
-                <a
-                  href="tel:199"
-                  class="hover:text-white focus:outline-none focus-visible:underline"
-                  aria-label="Defesa Civil — telefone 199"
-                >
-                  🏛️ Defesa Civil — 199
-                </a>
+              <li class="pointer-events-none font-semibold" aria-label="Defesa Civil — telefone 199">
+                🏛️ Defesa Civil — 199
               </li>
             </ul>
           </div>
