@@ -1,28 +1,23 @@
 <script setup lang="ts">
 defineProps<{
-  icon: string
-  label: string
-  value: number | string
-  description?: string
-  colorClass?: string
+  size?: 'sm' | 'md' | 'lg'
+  label?: string
 }>()
 </script>
 
 <template>
-  <article
-    class="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-md"
-    :aria-label="`${label}: ${value}`"
+  <div
+    class="flex items-center justify-center py-12"
+    role="status"
+    :aria-label="label ?? 'Carregando...'"
   >
     <div
-      :class="['flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-2xl', colorClass ?? 'bg-blue-100']"
+      :class="[
+        'animate-spin rounded-full border-4 border-slate-200 border-t-blue-600',
+        size === 'sm' ? 'h-6 w-6' : size === 'lg' ? 'h-16 w-16' : 'h-10 w-10',
+      ]"
       aria-hidden="true"
-    >
-      {{ icon }}
-    </div>
-    <div>
-      <p class="text-2xl font-bold text-slate-900">{{ value }}</p>
-      <p class="text-md font-medium text-slate-900">{{ label }}</p>
-      <p v-if="description" class="text-sm text-slate-500">{{ description }}</p>
-    </div>
-  </article>
+    />
+    <span class="sr-only">{{ label ?? 'Carregando...' }}</span>
+  </div>
 </template>
