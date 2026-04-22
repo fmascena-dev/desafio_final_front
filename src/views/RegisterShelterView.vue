@@ -153,10 +153,10 @@ function goToShelters() {
 </script>
 
 <template>
-  <main id="main-content" tabindex="-1" class="mx-auto max-w-2xl px-4 py-8 sm:px-6">
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-2xl px-4 py-20 sm:px-8">
     <RouterLink
       to="/abrigos"
-      class="mb-6 inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800  focus-visible:underline"
+      class="mb-6 inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800  focus-visible:underline hover:underline"
     >
       ← Voltar para abrigos
     </RouterLink>
@@ -203,8 +203,8 @@ function goToShelters() {
           {{ submitError }}
         </div>
 
-        <fieldset class="rounded-xl outline outline-slate-200 bg-white p-5 shadow-sm">
-          <legend class="mb-4 font-semibold text-slate-900">Informações básicas</legend>
+        <fieldset class="rounded-md outline outline-slate-400 bg-white p-5 shadow-sm">
+          <legend class="pt-2 font-semibold text-slate-900">Informações básicas</legend>
 
           <div class="space-y-4">
             <div>
@@ -334,8 +334,8 @@ function goToShelters() {
           </div>
         </fieldset>
 
-        <fieldset class="rounded-xl outline outline-slate-200 bg-white p-5 shadow-sm">
-          <legend class="mb-4 font-semibold text-slate-900">Capacidade e ocupação</legend>
+        <fieldset class="rounded-md outline outline-slate-400 bg-white p-5 shadow-sm">
+          <legend class="pt-2 font-semibold text-slate-900">Capacidade e ocupação</legend>
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label for="capacity" class="mb-1 block text-sm font-medium text-slate-700">
@@ -384,8 +384,8 @@ function goToShelters() {
           </div>
         </fieldset>
 
-        <fieldset class="rounded-xl outline outline-slate-200 bg-white p-5 shadow-sm">
-          <legend class="mb-4 font-semibold text-slate-900">Recursos e acessibilidade</legend>
+        <fieldset class="rounded-md outline outline-slate-400 bg-white p-5 shadow-sm">
+          <legend class="pt-2 font-semibold text-slate-900">Recursos e acessibilidade</legend>
           <div class="space-y-3">
             <label class="flex cursor-pointer items-center gap-3">
               <input
@@ -414,8 +414,8 @@ function goToShelters() {
           </div>
         </fieldset>
 
-        <fieldset class="rounded-xl outline outline-slate-200 bg-white p-5 shadow-sm">
-          <legend class="mb-1 font-semibold text-slate-900">Necessidades do abrigo</legend>
+        <fieldset class="rounded-md outline outline-slate-400 bg-white p-5 shadow-sm">
+          <legend class="pt-2 font-semibold text-slate-900">Necessidades do abrigo</legend>
           <p class="mb-3 text-xs text-slate-500">
             Adicione itens que o abrigo precisa receber como doação.
           </p>
@@ -461,8 +461,8 @@ function goToShelters() {
           </ul>
         </fieldset>
 
-        <fieldset class="rounded-xl outline outline-slate-200 bg-white p-5 shadow-sm">
-          <legend class="mb-4 font-semibold text-slate-900">Coordenação</legend>
+        <fieldset class="rounded-md outline outline-slate-400 bg-white p-5 shadow-sm">
+          <legend class="pt-2 font-semibold text-slate-900">Coordenação</legend>
           <div class="space-y-4">
             <div>
               <label for="coordinator_name" class="mb-1 block text-sm font-medium text-slate-700">
