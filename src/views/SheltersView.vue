@@ -114,7 +114,7 @@ onMounted(() => fetchShelters())
           v-model="search"
           type="search"
           placeholder="Buscar por nome, cidade ou endereço..."
-          class="w-full rounded-lg outline outline-slate-300 py-2.5 pl-10 pr-4 text-sm text-slate-900 placeholder-slate-400 transition focus:border-none focus:outline-blue-500 focus:ring-2 focus:ring-blue-500/30"
+          class="w-full rounded-lg outline outline-slate-300 py-2.5 pl-10 pr-4 text-sm text-slate-900 placeholder-slate-400 transition focus:border-none focus:outline-blue-700 focus:ring-2 focus:ring-blue-500/30"
         />
       </div>
 
@@ -187,11 +187,7 @@ onMounted(() => fetchShelters())
       </div>
     </div>
 
-    <p
-      class="mb-4 text-sm text-slate-700 font-semibold"
-      aria-live="polite"
-      aria-atomic="true"
-    >
+    <p class="mb-4 text-sm text-slate-700 font-semibold" aria-live="polite" aria-atomic="true">
       <template v-if="!loading">
         {{ filteredShelters.length }}
         {{ filteredShelters.length === 1 ? 'abrigo encontrado' : 'abrigos encontrados' }}
